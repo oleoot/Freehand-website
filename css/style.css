@@ -27,6 +27,7 @@ a {
     background: var(--secondary-color);
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 .header__right,
@@ -131,7 +132,7 @@ a {
 
 /* Experience section ======================================================================================= */
 .experience {
-    padding: 120px 0;
+    padding: 120px 0 0;
 }
 
 .experience__types-wrap {
@@ -164,6 +165,32 @@ a {
 .experience-type__button {
     display: block;
     margin-top: 35px;
+}
+
+/* Features section ======================================================================================== */
+.features {
+    padding: 200px 0;
+}
+
+.features__types-wrap {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.feature-type {
+    position: relative;
+}
+
+.feature-type__desc {
+    position: absolute;
+    bottom: 65px;
+    left: 45px;
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    max-width: 449px;
 }
 
 /* Utility classes =========================================================== */
@@ -217,5 +244,5 @@ a {
 .section-description {
     font-size: 18px;
     font-weight: 400;
-    color: var(--primary-color);
+    color: #7690A8
 }
