@@ -193,6 +193,74 @@ a {
     max-width: 449px;
 }
 
+/* Plan section ========================================================================================= */
+.plan__types-wrap {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.plan__types-wrap div:nth-child(1) {
+    border-top: 3px solid var(--accent-color);
+}
+
+.plan__types-wrap div:nth-child(2) {
+    border-top: 3px solid #52C29D;
+}
+
+.plan__types-wrap div:nth-child(3) {
+    border-top: 3px solid #F04D5D;
+}
+
+.plan-type {
+    padding: 50px 40px;
+    box-shadow: 0px 0px 10px #f3f3f3;
+}
+
+.plan-type p {
+    text-align: center;
+}
+
+.plan-type__name {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.plan-type__price {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin: 37px 0 10px;
+}
+
+.plan-type__longevity {
+    color: #5A7184;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.plan-desc {
+    font-size: 16px;
+    color: #7690A8;
+    font-weight: 400;
+    margin: 40px 0 55px;
+}
+
+.plan .btn {
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.plan-type__price_enterprice {
+    color: #52C29D;
+}
+
+.plan-type__price_pro {
+    color: #F04D5D;
+}
+
 /* Utility classes =========================================================== */
 .container {
     width: 100%;
