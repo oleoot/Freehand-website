@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
@@ -44,17 +45,25 @@
                 </div>
             </div>
             <div class="main__slider-wrap">
-                <div class="main-slider__controls">
-                    <div class="slider-arrow slider-arrow-left">
-                        <img src="img/icons/slider/arrow-left.png" alt="arrow-left">
+                <div class="main__slider-inside">
+                    <div class="main-slider__controls">
+                        <div class="slider-arrow slider-arrow-left">
+                            <img src="img/icons/slider/arrow-left.png" alt="arrow-left">
+                        </div>
+                        <div class="slider-arrow slider-arrow-right">
+                            <img src="img/icons/slider/arrow-right.png" alt="arrow-left">
+                        </div>
                     </div>
-                    <div class="slider-arrow slider-arrow-right">
-                        <img src="img/icons/slider/arrow-right.png" alt="arrow-left">
-                    </div>
-                </div>
-                <div class="main-slider">
-                    <div>
-                        <img src="img/main-photos/main-1.png" alt="main-photo-1">
+                    <div class="main-slider">
+                        <div>
+                            <img src="img/main-photos/main-1.png" alt="main-photo-1">
+                        </div>
+                        <div>
+                            <img src="img/main-photos/main-2.png" alt="main-photo-2">
+                        </div>
+                        <div>
+                            <img src="img/main-photos/main-3.jpg" alt="main-photo-1">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,15 +108,15 @@
             <p class="section-description">Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius
                 enim in eros .</p>
             <div class="features__types-wrap">
-                <div class="feature-type">
+                <a href="#" class="feature-type">
                     <img src="img/features/features-1.png" alt="feature-1">
                     <p class="feature-type__desc">120 million curious readers and growing.</p>
-                </div>
-                <div class="feature-type">
+                </a>
+                <a href="#" class="feature-type">
                     <img src="img/features/features-2.png" alt="feature-2">
                     <p class="feature-type__desc">Expand your reading.
                         Expand your mind.</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -208,6 +217,8 @@
         </div>
         <p class="copy">Copyright &copy; 2020. Crafted with love</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
