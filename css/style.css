@@ -5,3 +5,82 @@
     font-family: 'Nunito', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
+:root {
+    --primary-color: #16133D;
+    --secondary-color: #fff;
+    --accent-color: #007FFC;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header ============================================================================ */
+.header {
+    width: 100%;
+    padding: 35px 0;
+    background: var(--secondary-color);
+    position: fixed;
+    top: 0;
+}
+
+.header__right,
+.header__left,
+.header__center {
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 190px;
+}
+
+.header__center {
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header__right a:nth-child(1) {
+    margin-right: 20px;
+}
+
+/* Utility classes =========================================================== */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1155px;
+}
+
+.btn {
+    padding: 15px 35px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.btn_active {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
