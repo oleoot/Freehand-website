@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -83,6 +82,7 @@ a {
     font-weight: 600;
     max-width: 477px;
     margin-top: 15px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .main_desc {
@@ -129,6 +129,43 @@ a {
     right: -27.5px;
 }
 
+/* Experience section ======================================================================================= */
+.experience {
+    padding: 120px 0;
+}
+
+.experience__types-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 65px;
+}
+
+.experience-type {
+    border: 1px solid #e5eaf4;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.experience-type__name {
+    margin: 30px 0 15px;
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.experience-type__desc,
+.experience-type__button {
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.experience-type__button {
+    display: block;
+    margin-top: 35px;
+}
+
 /* Utility classes =========================================================== */
 .container {
     width: 100%;
@@ -161,4 +198,24 @@ a {
 .btn_active-dark {
     background: var(--primary-color);
     color: var(--secondary-color);
+}
+
+.section-type {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7690A8;
+    text-transform: uppercase;
+}
+
+.section-name {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 5px 0 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.section-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-color);
 }
