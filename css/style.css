@@ -306,6 +306,75 @@ a {
     background: transparent;
 }
 
+/* Footer ========================================================================================= */
+.footer {
+    padding: 90px 0 70px;
+    background: var(--primary-color);
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.footer__desc {
+    font-size: 16px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    margin-top: 20px;
+    max-width: 285px;
+}
+
+.footer__social-wrap {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    gap: 8px;
+    margin-top: 55px;
+}
+
+.footer__list li:nth-child(1) {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer__list-item {
+    margin-bottom: 12px;
+}
+
+.footer__link {
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.footer__mail {
+    display: block;
+    margin: 20px 0 30px;
+    color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.footer__certificates-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__certificates-wrap a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.copy {
+    margin: 90px auto 0;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
 /* Utility classes =========================================================== */
 .container {
     width: 100%;
