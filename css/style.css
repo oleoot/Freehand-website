@@ -39,7 +39,7 @@ a {
 
 .header .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, max-content);
     column-gap: 120px;
 }
 
@@ -207,6 +207,10 @@ a {
     position: relative;
 }
 
+.feature-type__img {
+    width: 100%;
+}
+
 .feature-type__desc {
     position: absolute;
     bottom: 65px;
@@ -304,7 +308,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(../img/ad/ad.png) top/cover
+    background: url(../img/proposition/proposition.png) top/cover
 }
 
 .proposition-type__headline {
@@ -462,4 +466,97 @@ a {
     font-size: 18px;
     font-weight: 400;
     color: #7690A8
+}
+
+/* Adaptivness ==================================================================================== */
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .header__list-item {
+        margin: 0 10px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .main .container {
+        gap: 70px;
+    }
+
+    .proposition-type__headline,
+    .proposition-type__desc {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .header__navbar {
+        display: none;
+    }
+
+    .main .container {
+        grid-template-columns: 1fr;
+        padding-bottom: 500px;
+    }
+
+    .main-slider img {
+        width: 100%;
+        max-height: 462px;
+    }
+
+    .features__types-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .plan__types-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .proposition-type {
+        padding: 50px 120px;
+    }
+
+    .footer .container {
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 550px;
+    }
+
+    .experience__types-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .proposition-type {
+        padding: 50px;
+    }
+
+    .header .container {
+        column-gap: 30px;
+    }
+
+    .plan__types-wrap {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .header__right {
+        display: none;
+    }
 }
